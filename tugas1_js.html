@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript </title>
+    <style>
+        th{
+            background-color: khaki;
+        }
+    </style>
+    <script lang="text/javascript">
+        // variabel dan tipe data 
+        var pegawai = "Ridwan";
+        var jabatan = "Manager";
+        var status = "Menikah";
+
+        if(jabatan == "Manager"){
+            gapok = 15000000;
+        }
+        else if(jabatan == "Asisten Manager"){
+            gapok = 10000000;
+        }
+        else if(jabatan == "Staff"){
+            gapok = 5000000;
+        }
+        else {
+            gapok = 0;
+        }
+        let tunjab = 0.15 * gapok;
+        let bpjs = 0.1 * gapok;
+        // ternary 
+        if(status == 'Menikah') tunkel = 0.2 * gapok;
+        else tunkel = 0;
+
+        let toji = gapok + tunjab + bpjs + tunkel;
+    </script>
+</head>
+<body>
+    <table border="0" align="center">
+        <tr>
+            <td>Nama Pegawai</td>
+            <td>: Ridwan</td>
+        </tr>
+        <tr>
+            <td>Jabatan</td>
+            <td>: Manager</td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>: Menikah</td>
+        </tr>
+    </table>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gaji Pokok</td>
+                <td><script>document.write("Rp " + gapok);</script></td>
+            </tr>
+            <tr>
+                <td>Tunjangan Jabatan</td>
+                <td><script>document.write("Rp " + tunjab);</script></td>
+            </tr>
+            <tr>
+                <td>BPJS</td>
+                <td><script>document.write("Rp " + bpjs);</script></td>
+            </tr>
+            <tr>
+                <td>Tunjangan Keluarga</td>
+                <td><script>document.write("Rp " + tunkel);</script></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total Gaji</th>
+                <th><script>document.write("Rp " + toji);</script></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
