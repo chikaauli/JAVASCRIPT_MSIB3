@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pembelian Barang Dengan Konfersi Kurs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="card">
+        <div class="card-header" align="center">
+            Pembelian Barang dengan Konversi Kurs
+        </div>
+        <div class="card-body">
+            <form id="frm">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Nama Pembeli</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" name="nama">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Nama Barang</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" name="barang">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Harga Barang</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" name="harga">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Jumlah Barang</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" name="jumlah">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Valuta Asing</label>
+                    <div class="col-sm-10">
+                        <select name="valas" onchange="javascript:konversiKurs()" class="form-control">
+                            <option value="">-- Pilih Valas --</option>
+                            <option value="14973">-- USD --</option>
+                            <option value="10590">-- SGD --</option>
+                            <option value="14943">-- EUR --</option>
+                            <option value="10400">-- AUD --</option>
+                            <option value="2000">-- CNY --</option>
+                            <option value="10">-- KRW --</option>
+                        </select>
+                    </div>    
+            </form>
+        </div>
+    </div>  
+    <div class="alert alert-primary" role="alert" id="isi">
+    </body> 
+<script>
+/*
+Hitunglah pembelian barang berdasarkan kurs valas yang dipilih.
+(Event Handle Js nya: onchange ketika pilih valas)
+Hasilnya ditempatkan pada paragraf yang ber-id-kan isi
+*/
+function konversiKurs(){
+    let napem = document.getElementById('frm').nama.value;
+    let nabar = document.getElementById('frm').barang.value;
+    let habar = document.getElementById('frm').harga.value;
+    let tohar = document.getElementById('frm').jumlah.value;
+    let valsing = document.getElementById('frm').valas.value;
+    let tobar = habar * tohar * valsing;
+
+    switch(valsing){
+        case '14973': simbol = '$'; break;
+        case '10590': simbol = '$'; break;
+        case '14943': simbol = '€'; break;
+        case '10400': simbol = 'A$'; break;
+        case '2000': simbol = '¥'; break;
+        case '10': simbol = '₩'; break;
+    }
+
+    let hasil = `Data pembelian 
+    <br/>Nama pembeli: ${napem}
+    <br/>Nama barang: ${nabar}
+    <br/>Harga barang: ${simbol}${habar}
+    <br/>Jumlah barang: ${tohar}
+    <br/>Valuta Asing: Rp ${valsing}
+    <br/>Total bayar: Rp ${tobar}
+    `;
+
+    document.getElementById('isi').innerHTML = hasil;
+}
+</script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+</html>
