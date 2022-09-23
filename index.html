@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mycss.css">
+</head>
+
+<body>
+    <h1>Menampilkan Animasi hewan dan Suaranya</h1>
+    <div class="container-fluid my-5">
+        <div class="accordion " id="accordionExample">
+
+            <!-- Hewan Unggas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Hewan Unggas
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start">
+                            <div id="ayam" class="card" style="width: 15rem;" onclick="ayam">
+                                <img id="ayam-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top"
+                                    alt="...">
+                                <div id="ayam-text">
+                                    Ayam
+                                </div>
+                                <div id="ayam-subtext">
+                                </div>
+                            </div>
+                            <div id="bebek" class="card mx-5" style="width: 15rem;" onclick="bebek">
+                                <img id="bebek-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top"
+                                    alt="...">
+                                <div id="bebek-text">
+                                    Bebek
+                                </div>
+                                <div id="bebek-subtext">
+                                </div>
+                            </div>
+                            <div id="burung" class="card" style="width: 15rem;" onclick="burung">
+                                <img id="burung-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top"
+                                    alt="...">
+                                <div id="burung-text">
+                                    Burung Beo
+                                </div>
+                                <div id="burung-subtext">
+                                </div>
+                            </div>
+                            <div id="angsa" class="card mx-5" style="width: 15rem;" onclick="angsa">
+                                <img id="angsa-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top"
+                                    alt="...">
+                                <div id="angsa-text">
+                                    Angsa
+                                </div>
+                                <div id="angsa-subtext">
+                                </div>
+                            </div>
+                            <div id="pelikan" class="card" style="width: 15rem;" onclick="pelikan">
+                                <img id="pelikan-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top"
+                                    alt="...">
+                                <div id="pelikan-text">
+                                    Burung Pelikan
+                                </div>
+                                <div id="pelikan-subtext">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Hewan Ternak -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Hewan Ternak
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start">
+                            <div id="sapi" class="card" style="width: 15rem;" onclick="sapi">
+                                <img id="sapi-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="sapi-text">
+                                    Sapi
+                                </div>
+                                <div id="sapi-subtext">
+                                </div>
+                            </div>
+                            <div id="kambing" class="card mx-5" style="width: 15rem;" onclick="kambing">
+                                <img id="kambing-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="kambing-text">
+                                    Kambing 
+                                </div>
+                                <div id="kambing-subtext">
+                                </div>
+                            </div>
+                            <div id="kerbau" class="card" style="width: 15rem;" onclick="kerbau">
+                                <img id="kerbau-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="kerbau-text">
+                                    Kerbau
+                                </div>
+                                <div id="kerbau-subtext">
+                                </div>
+                            </div>
+                            <div id="domba" class="card mx-5" style="width: 15rem;" onclick="domba">
+                                <img id="domba-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="domba-text">
+                                    Domba 
+                                </div>
+                                <div id="domba-subtext">
+                                </div>
+                            </div>
+                            <div id="babi" class="card" style="width: 15rem;" onclick="babi">
+                                <img id="babi-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="babi-text">
+                                    Babi
+                                </div>
+                                <div id="babi-subtext">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hewan Buas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Hewan Buas
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start">
+                            <div id="harimau"class="card" style="width: 15rem;" onclick="harimau">
+                                <img id="harimau-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="harimau-text">
+                                    Harimau
+                                </div>
+                                <div id="harimau-subtext">
+                                </div>
+                            </div>
+                            <div id="komodo" class="card mx-5" style="width: 15rem;" onclick="komodo">
+                                <img id="komodo-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="komodo-text">
+                                    Komodo
+                                </div>
+                                <div id="komodo-subtext">
+                                </div>
+                            </div>
+                            <div id="singa" class="card" style="width: 15rem;" onclick="singa">
+                                <img id="singa-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="singa-text">
+                                    Singa
+                                </div>
+                                <div id="singa-subtext">
+                                </div>
+                            </div>
+                            <div id="beruang" class="card mx-5" style="width: 15rem;" onclick="beruang">
+                                <img id="beruang-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="beruang-text">
+                                    Beruang
+                                </div>
+                                <div id="beruang-subtext">
+                                </div>
+                            </div>
+                            <div id="serigala" class="card" style="width: 15rem;" onclick="serigala">
+                                <img id="serigala-img" src="https://cdn.kibrispdr.org/data/13/background-putih-full-hd-0.jpg" class="card-img-top" alt="...">
+                                <div id="serigala-text">
+                                    Serigala 
+                                </div>
+                                <div id="serigala-subtext">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer p-2 text-muted bg-white">
+        Chika Aulia Zahwa &copy; Copyright 2022 | #Akademik Fullstack Web Developer MSIB Batch3
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>

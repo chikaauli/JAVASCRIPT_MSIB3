@@ -1,0 +1,362 @@
+#ayam,
+#bebek,
+#burung,
+#angsa,
+#pelikan,
+#sapi,
+#kambing,
+#kerbau,
+#domba,
+#babi,
+#harimau,
+#komodo,
+#singa,
+#beruang,
+#serigala {
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: comic;
+    color: #4C5A38;
+    font-weight: bold;
+}
+body {
+    background-image: url('../img/animals.png');
+}
+
+/* Hewan Unggas */
+#ayam-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #414B3B;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* font-size: 10px; */
+}
+
+#ayam-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#bebek-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #AB8742;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* font-size: 40px; */
+}
+
+#bebek-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#burung-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #453C2A;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#burung-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#angsa-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #C7A15B;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* font-size: 40px; */
+}
+
+#angsa-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#pelikan-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #8CA87C;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#pelikan-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Hewan Ternak */
+#sapi-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5D5340;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#sapi-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+#kambing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #A7C396;
+    font-weight: bold;
+    /* font-size: 40px; */
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#kambing-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#kerbau-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #586352;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#kerbau-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+#domba-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #C7A15B;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#domba-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+#babi-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #414B3B;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#babi-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* hewan buas */
+#harimau-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4C5A38;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#harimau-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+#komodo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #C48868;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#komodo-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#singa-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #B6AD9F;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#singa-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+#beruang-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #545454;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#beruang-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+#serigala-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #77875F;
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#serigala-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    color: #94BD66;
+}
